@@ -131,9 +131,36 @@ figcaption{font-family:system-ui,sans-serif;font-size:14px;color:var(--muted);ma
 .hero p{max-width:640px;margin:22px auto 0;color:#c9d0dd;font-size:18px}
 h2.disp{letter-spacing:.01em}
 
+/* ---- game pages ---- */
+.yt{position:relative;aspect-ratio:16/9;background:#000 center/cover no-repeat;border-radius:10px;overflow:hidden;cursor:pointer;margin:1.4rem 0;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.yt .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:76px;height:54px;background:rgba(200,56,3,.95);border-radius:14px;display:grid;place-items:center;transition:transform .15s}
+.yt:hover .play{transform:translate(-50%,-50%) scale(1.06)}
+.yt .play::after{content:"";border-style:solid;border-width:12px 0 12px 22px;border-color:transparent transparent transparent #fff;margin-left:4px}
+.yt .lbl{position:absolute;left:0;right:0;bottom:0;padding:.6rem .9rem;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff;font-size:.85rem}
+.ytcredit{font-size:.82rem;color:var(--muted,#666);margin-top:-.8rem;margin-bottom:1.4rem}
+.score{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1rem;background:var(--navy,#0b162a);color:#fff;border-radius:12px;padding:1.2rem 1.4rem;margin:1.2rem 0}
+.score .t{font-family:'Alfa Slab One','Alfa Fallback',serif;font-size:clamp(1rem,2.6vw,1.4rem);line-height:1.1}
+.score .n{font-family:'Alfa Slab One','Alfa Fallback',serif;font-size:clamp(2.2rem,7vw,3.6rem);line-height:1}
+.score .vs{opacity:.6;font-size:.9rem;text-align:center}
+.score .r{text-align:right}
+.score small{display:block;opacity:.7;font-size:.8rem;font-family:inherit;font-weight:400;margin-top:.3rem}
+.facts li{margin:.45rem 0}
+.facts li a.src{font-size:.78rem;color:var(--muted,#666);text-decoration:none;margin-left:.3rem}
+.facts li a.src:hover{text-decoration:underline}
+.gamegrid{list-style:none;padding:0;margin:1.2rem 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1rem}
+.gamegrid li a{display:block;border:1px solid var(--rule);border-radius:10px;overflow:hidden;text-decoration:none;color:inherit;background:#fff}
+.gamegrid img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#0b162a}
+.gamegrid .cap{padding:.7rem .85rem}
+.gamegrid .cap b{display:block;font-size:.95rem}
+.gamegrid .cap span{font-size:.8rem;color:var(--muted,#666)}
+.gamegrid .cap .res{color:var(--orange);font-weight:700}
+.pn{display:flex;justify-content:space-between;gap:1rem;margin:2rem 0 0;font-size:.95rem}
+.pn a{text-decoration:none;border-bottom:1px solid currentColor}
+
 </style>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://goodbetterbestchant.com/#org", "name": "Good Better Best Chant", "url": "https://goodbetterbestchant.com/", "logo": {"@type": "ImageObject", "url": "https://goodbetterbestchant.com/apple-touch-icon.png", "width": 180, "height": 180}, "description": "An independent reference on the \"Good, better, best\" chant and proverb."}, {"@type": "WebSite", "@id": "https://goodbetterbestchant.com/#site", "name": "Good Better Best Chant", "url": "https://goodbetterbestchant.com/", "publisher": {"@id": "https://goodbetterbestchant.com/#org"}, "inLanguage": "en-US"}, {"@type": "Article", "headline": "\"Good, Better, Best\" as a Tattoo", "description": "Getting good, better, best, never let it rest as a tattoo: which wording, how the lines break, why not to add St. Jerome, and the Bears question.", "datePublished": "2026-11-07", "dateModified": "2026-11-07", "author": {"@id": "https://goodbetterbestchant.com/#org"}, "publisher": {"@id": "https://goodbetterbestchant.com/#org"}, "mainEntityOfPage": "https://goodbetterbestchant.com/tattoo/", "image": "https://goodbetterbestchant.com/og.png", "isPartOf": {"@id": "https://goodbetterbestchant.com/#site"}, "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "The Good, Better, Best Chant", "item": "https://goodbetterbestchant.com/"}, {"@type": "ListItem", "position": 2, "name": "Tattoo", "item": "https://goodbetterbestchant.com/tattoo/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the correct wording for a good, better, best tattoo?", "acceptedAnswer": {"@type": "Answer", "text": "Traditional: \"Good, better, best. Never let it rest. 'Til your good is better and your better is best.\" The Bears' version uses \"gets\" instead of \"is.\" Both are correct; pick one and keep it."}}, {"@type": "Question", "name": "Should I credit St. Jerome on a good, better, best tattoo?", "acceptedAnswer": {"@type": "Answer", "text": "No. He never said it. The rhyme is a traditional English saying with no known author; credit \"Traditional\" or leave it off."}}, {"@type": "Question", "name": "Is it 'til or till in good, better, best?", "acceptedAnswer": {"@type": "Answer", "text": "Either appears in print. \"'Til\" (with the apostrophe) is short for until; \"until\" avoids the question."}}, {"@type": "Question", "name": "Can I get the Bears' good, better, best chant as a tattoo?", "acceptedAnswer": {"@type": "Answer", "text": "The words are a public-domain proverb, so yes. The Bears' name and logo are trademarks; the text itself is not."}}]}]}
+{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://goodbetterbestchant.com/#org", "name": "Good Better Best Chant", "url": "https://goodbetterbestchant.com/", "logo": {"@type": "ImageObject", "url": "https://goodbetterbestchant.com/apple-touch-icon.png", "width": 180, "height": 180}, "description": "An independent reference on the \"Good, better, best\" chant and proverb."}, {"@type": "WebSite", "@id": "https://goodbetterbestchant.com/#site", "name": "Good Better Best Chant", "url": "https://goodbetterbestchant.com/", "publisher": {"@id": "https://goodbetterbestchant.com/#org"}, "inLanguage": "en-US"}, {"@type": "Article", "headline": "\"Good, Better, Best\" as a Tattoo", "description": "Getting good, better, best, never let it rest as a tattoo: which wording, how the lines break, why not to add St. Jerome, and the Bears question.", "datePublished": "2026-11-08", "dateModified": "2026-11-08", "author": {"@id": "https://goodbetterbestchant.com/#org"}, "publisher": {"@id": "https://goodbetterbestchant.com/#org"}, "mainEntityOfPage": "https://goodbetterbestchant.com/tattoo/", "image": "https://goodbetterbestchant.com/og.png", "isPartOf": {"@id": "https://goodbetterbestchant.com/#site"}, "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "The Good, Better, Best Chant", "item": "https://goodbetterbestchant.com/"}, {"@type": "ListItem", "position": 2, "name": "Tattoo", "item": "https://goodbetterbestchant.com/tattoo/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the correct wording for a good, better, best tattoo?", "acceptedAnswer": {"@type": "Answer", "text": "Traditional: \"Good, better, best. Never let it rest. 'Til your good is better and your better is best.\" The Bears' version uses \"gets\" instead of \"is.\" Both are correct; pick one and keep it."}}, {"@type": "Question", "name": "Should I credit St. Jerome on a good, better, best tattoo?", "acceptedAnswer": {"@type": "Answer", "text": "No. He never said it. The rhyme is a traditional English saying with no known author; credit \"Traditional\" or leave it off."}}, {"@type": "Question", "name": "Is it 'til or till in good, better, best?", "acceptedAnswer": {"@type": "Answer", "text": "Either appears in print. \"'Til\" (with the apostrophe) is short for until; \"until\" avoids the question."}}, {"@type": "Question", "name": "Can I get the Bears' good, better, best chant as a tattoo?", "acceptedAnswer": {"@type": "Answer", "text": "The words are a public-domain proverb, so yes. The Bears' name and logo are trademarks; the text itself is not."}}]}]}
 </script>
 </head>
 <body>
@@ -142,7 +169,7 @@ h2.disp{letter-spacing:.01em}
   <a class="brand disp" href="/">Good Better <span>Best</span></a>
   <ul class="main"><li><a href="/words/">Words</a></li><li><a href="/origin/">Origin</a></li><li><a href="/who-said-it/">Who said it</a></li><li><a href="/meaning/">Meaning</a></li><li><a href="/for-coaches/">For coaches</a></li><li><a href="/timeline/">Timeline</a></li><li><a href="/quotes/">Quotes</a></li></ul>
  </nav>
- <nav class="subnav" aria-label="Pages"><a href="/words/">Words</a><a href="/origin/">Origin</a><a href="/who-said-it/">Who said it</a><a href="/meaning/">Meaning</a><a href="/for-coaches/">Coaches</a><a href="/timeline/">Timeline</a><a href="/quotes/">Quotes</a><a href="/tattoo/">Tattoo</a><a href="/ben-johnson-speech/">Speeches</a></nav>
+ <nav class="subnav" aria-label="Pages"><a href="/words/">Words</a><a href="/origin/">Origin</a><a href="/who-said-it/">Who said it</a><a href="/meaning/">Meaning</a><a href="/for-coaches/">Coaches</a><a href="/timeline/">Timeline</a><a href="/games/">Games</a><a href="/quotes/">Quotes</a><a href="/tattoo/">Tattoo</a><a href="/ben-johnson-speech/">Speeches</a></nav>
 </header>
 
 <main>
@@ -150,7 +177,7 @@ h2.disp{letter-spacing:.01em}
 <p class="crumb"><a href="/">The Good, Better, Best Chant</a> › Tattoo</p>
 <h1>"Good, Better, Best" as a Tattoo</h1>
 <p class="kicker">Permanent ink deserves the right words. Here is which wording to pick, how it breaks across lines, and the attribution mistake to avoid.</p>
-<div class="meta">Last updated <time datetime="2026-11-07">November 7, 2026</time></div>
+<div class="meta">Last updated <time datetime="2026-11-08">November 8, 2026</time></div>
 
 <h2 class="disp">Pick your wording first</h2>
 <p>There are two legitimate versions and they feel different on skin. The traditional "is" version reads as a proverb; the Bears' "gets" version reads as a command. Both are correct. Decide which you mean before you decide how it looks.</p>
@@ -198,7 +225,7 @@ document.querySelectorAll('.copyblock button').forEach(b=>b.addEventListener('cl
 </article>
 </main>
 <footer>
- <nav class="fnav" aria-label="Footer"><a href="/">The chant</a> · <a href="/words/">Words</a> · <a href="/origin/">Origin</a> · <a href="/who-said-it/">Who said it</a> · <a href="/meaning/">Meaning</a> · <a href="/for-coaches/">For coaches</a> · <a href="/timeline/">Timeline</a> · <a href="/quotes/">Quotes</a> · <a href="/tattoo/">Tattoo</a> · <a href="/never-let-it-rest/">Never let it rest</a> · <a href="/ben-johnson-speech/">Speeches</a> · <a href="/chase-rice/">Chase Rice</a> · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a></nav>
+ <nav class="fnav" aria-label="Footer"><a href="/">The chant</a> · <a href="/words/">Words</a> · <a href="/origin/">Origin</a> · <a href="/who-said-it/">Who said it</a> · <a href="/meaning/">Meaning</a> · <a href="/for-coaches/">For coaches</a> · <a href="/timeline/">Timeline</a> · <a href="/games/">Game by game</a> · <a href="/quotes/">Quotes</a> · <a href="/tattoo/">Tattoo</a> · <a href="/never-let-it-rest/">Never let it rest</a> · <a href="/ben-johnson-speech/">Speeches</a> · <a href="/chase-rice/">Chase Rice</a> · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a></nav>
  Independent. Not affiliated with the Chicago Bears or the NFL. "Good, better, best" is a traditional proverb.<br>
  © 2026 goodbetterbestchant.com · <a href="/about/">Who runs this</a>
 </footer>
