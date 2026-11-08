@@ -35,7 +35,7 @@ header.top{position:sticky;top:0;z-index:5;background:var(--navy);color:#fff}
 .nav{max-width:1100px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .brand{color:#fff;text-decoration:none;font-size:18px}
 .brand span{color:var(--orange)}
-.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:18px;align-items:center}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:16px;align-items:center}
 .nav ul a{color:#fff;text-decoration:none;font-family:system-ui,sans-serif;font-size:14px;letter-spacing:.04em;text-transform:uppercase;opacity:.85}
 .nav ul a:hover{opacity:1}
 .btn{display:inline-block;background:var(--orange);color:#fff!important;padding:10px 18px;border-radius:4px;text-decoration:none;font-family:"Alfa Slab One","Alfa Fallback",Impact,sans-serif;text-transform:uppercase;letter-spacing:.03em;font-size:15px!important;opacity:1!important}
@@ -148,7 +148,7 @@ h2.disp{letter-spacing:.01em}
 .facts li{margin:.45rem 0}
 .facts li a.src{font-size:.78rem;color:var(--muted,#666);text-decoration:none;margin-left:.3rem}
 .facts li a.src:hover{text-decoration:underline}
-.gamegrid{list-style:none;padding:0;margin:1.2rem 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1rem}
+.gamegrid{list-style:none;padding:0;margin:1.2rem 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem}
 .gamegrid li a{display:block;border:1px solid var(--rule);border-radius:10px;overflow:hidden;text-decoration:none;color:inherit;background:#fff}
 .gamegrid img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#0b162a}
 .gamegrid .cap{padding:.7rem .85rem}
@@ -157,6 +157,10 @@ h2.disp{letter-spacing:.01em}
 .gamegrid .cap .res{color:var(--orange);font-weight:700}
 .pn{display:flex;justify-content:space-between;gap:1rem;margin:2rem 0 0;font-size:.95rem}
 .pn a{text-decoration:none;border-bottom:1px solid currentColor}
+
+.gamegrid.mini{grid-template-columns:repeat(3,1fr)}
+@media (max-width:640px){.gamegrid.mini{grid-template-columns:1fr}}
+.seeall{font-family:system-ui,sans-serif;font-weight:600}
 
 </style>
 <script type="application/ld+json">
@@ -167,7 +171,7 @@ h2.disp{letter-spacing:.01em}
 <header class="top">
  <nav class="nav" aria-label="Main">
   <a class="brand disp" href="/">Good Better <span>Best</span></a>
-  <ul class="main"><li class=cur><a href="/words/">Words</a></li><li><a href="/origin/">Origin</a></li><li><a href="/who-said-it/">Who said it</a></li><li><a href="/meaning/">Meaning</a></li><li><a href="/for-coaches/">For coaches</a></li><li><a href="/timeline/">Timeline</a></li><li><a href="/quotes/">Quotes</a></li></ul>
+  <ul class="main"><li class=cur><a href="/words/">Words</a></li><li><a href="/origin/">Origin</a></li><li><a href="/who-said-it/">Who said it</a></li><li><a href="/meaning/">Meaning</a></li><li><a href="/for-coaches/">For coaches</a></li><li><a href="/timeline/">Timeline</a></li><li><a href="/games/">Games</a></li><li><a href="/quotes/">Quotes</a></li></ul>
  </nav>
  <nav class="subnav" aria-label="Pages"><a href="/words/">Words</a><a href="/origin/">Origin</a><a href="/who-said-it/">Who said it</a><a href="/meaning/">Meaning</a><a href="/for-coaches/">Coaches</a><a href="/timeline/">Timeline</a><a href="/games/">Games</a><a href="/quotes/">Quotes</a><a href="/tattoo/">Tattoo</a><a href="/ben-johnson-speech/">Speeches</a></nav>
 </header>
@@ -223,7 +227,7 @@ document.querySelectorAll('.copyblock button').forEach(b=>b.addEventListener('cl
 </script>
 
 <h2 class="disp" id="faq">FAQ</h2><div class="faq"><details><summary>What are the words to the Bears' good, better, best chant?</summary><p>"Good, better, best! Never let it rest. 'Til your good gets better, and your better gets best." Then "Bears on three."</p></details><details><summary>Is it "'til your good gets better" or "is better"?</summary><p>The Bears say "gets." The traditional proverb says "is." Both are correct; "gets" is the version you'll hear in the locker-room clips.</p></details><details><summary>Is it "never let it rest" or "don't let it rest"?</summary><p>The Bears say "never let it rest." "Don't let it rest" appears in some older and regional versions, including one transcription of the A.C. Reynolds chant.</p></details><details><summary>What does the team say at the end?</summary><p>"Bears on three" — the coach counts one, two, three, and the team yells "Bears!" At A.C. Reynolds the ending was "Big. Green. Machine."</p></details><details><summary>Are there lyrics to the good better best chant?</summary><p>It isn't a song, but the four rhyming lines above are what people mean by the lyrics. A Chicago hip-hop group did release a song built on the chant in 2026.</p></details><details><summary>Can I print the words on a shirt or poster?</summary><p>Yes. The saying itself is a traditional proverb with no owner. Keep team names, logos and league marks off anything you print.</p></details></div>
-<nav class="related" aria-label="Related"><h2 class="disp">Keep reading</h2><ul><li><a href="/origin/"><strong>Where it came from</strong><span>An FCA camp, a high school in Asheville, and a quarterback who became a coach.</span></a></li><li><a href="/who-said-it/"><strong>Who really said it</strong><span>Not St. Jerome. Not Tim Duncan. What the record actually shows.</span></a></li><li><a href="/meaning/"><strong>What it means</strong><span>Why good is the floor, and how coaches, teachers and leaders use it.</span></a></li><li><a href="/for-coaches/"><strong>Run it with your team</strong><span>Step-by-step, plus free posters and a coach's card.</span></a></li><li><a href="/timeline/"><strong>Every time the Bears chanted it</strong><span>Win by win, 2025 to now.</span></a></li><li><a href="/quotes/"><strong>Quote cards</strong><span>The correct text, ready to download, with the honest credit line.</span></a></li></ul></nav>
+<nav class="related" aria-label="Related"><h2 class="disp">Keep reading</h2><ul><li><a href="/origin/"><strong>Where it came from</strong><span>An FCA camp, a high school in Asheville, and a quarterback who became a coach.</span></a></li><li><a href="/who-said-it/"><strong>Who really said it</strong><span>Not St. Jerome. Not Tim Duncan. What the record actually shows.</span></a></li><li><a href="/meaning/"><strong>What it means</strong><span>Why good is the floor, and how coaches, teachers and leaders use it.</span></a></li><li><a href="/for-coaches/"><strong>Run it with your team</strong><span>Step-by-step, plus free posters and a coach's card.</span></a></li><li><a href="/timeline/"><strong>Every time the Bears chanted it</strong><span>Win by win, 2025 to now.</span></a></li><li><a href="/games/"><strong>Game by game</strong><span>A page for every win: the score, the key plays, and the locker-room video.</span></a></li></ul></nav>
 </article>
 </main>
 <footer>
