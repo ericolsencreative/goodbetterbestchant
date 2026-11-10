@@ -1,0 +1,25 @@
+name: Unpack site bundle
+# Upload a single site.zip to the repo root and this unpacks it into the repo,
+# so a whole build deploys in one commit instead of one upload per page.
+on:
+  push:
+    branches: [main]
+    paths: ['site.zip']
+permissions:
+  contents: write
+concurrency: unpack-bundle
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unpack and commit
+        run: |
+          unzip -o -q site.zip -d .
+          git rm -q --cached site.zip
+          rm -f site.zip
+          git config user.name "site-bundle"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Deploy site bundle" || { echo "nothing to commit"; exit 0; }
+          git push
