@@ -178,6 +178,7 @@ table.tl td[rowspan]{vertical-align:top}
 .gamegrid.gear.home3{grid-template-columns:repeat(3,1fr)}
 @media(max-width:600px){.gamegrid.gear.home3{grid-template-columns:repeat(3,1fr);gap:.5rem}.gamegrid.gear.home3 .cap{padding:.5rem}.gamegrid.gear.home3 .cap b{font-size:.8rem}}
 section.game{scroll-margin-top:72px}
+a.yt{display:block;color:#fff}
 
 </style>
 <script type="application/ld+json">
@@ -309,7 +310,7 @@ section.game{scroll-margin-top:72px}
 <table class="tl"><tbody><tr><td>Sep 20, 2026</td><td>Week 2</td><td>vs Minnesota</td><td class='res'>L 3–9</td></tr><tr><td>Oct 11, 2026</td><td>Week 5</td><td>at Green Bay</td><td class='res'>L 7–31</td></tr></tbody></table>
 <p class="src">See also the <a href="/games/2025/" rel="noopener">2025 season</a>, <a href="/games/" rel="noopener">all games</a>, and <a href="/timeline/" rel="noopener">the full timeline</a>.</p>
 <script>
-document.querySelectorAll('.yt').forEach(function(el){
+document.querySelectorAll('.yt[data-id]').forEach(function(el){
   el.addEventListener('click',function(){
     var f=document.createElement('iframe');
     f.src='https://www.youtube-nocookie.com/embed/'+el.dataset.id+'?autoplay=1&rel=0';

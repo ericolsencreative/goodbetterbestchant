@@ -178,6 +178,7 @@ table.tl td[rowspan]{vertical-align:top}
 .gamegrid.gear.home3{grid-template-columns:repeat(3,1fr)}
 @media(max-width:600px){.gamegrid.gear.home3{grid-template-columns:repeat(3,1fr);gap:.5rem}.gamegrid.gear.home3 .cap{padding:.5rem}.gamegrid.gear.home3 .cap b{font-size:.8rem}}
 section.game{scroll-margin-top:72px}
+a.yt{display:block;color:#fff}
 
 </style>
 <script type="application/ld+json">
@@ -369,7 +370,7 @@ section.game{scroll-margin-top:72px}
 <table class="tl"><tbody><tr><td>Sep 8, 2025</td><td>Week 1</td><td>vs Minnesota</td><td class='res'>L 24–27</td></tr><tr><td>Sep 14, 2025</td><td>Week 2</td><td>at Detroit</td><td class='res'>L 21–52</td></tr><tr><td>Oct 26, 2025</td><td>Week 8</td><td>at Baltimore</td><td class='res'>L 16–30</td></tr><tr><td>Dec 7, 2025</td><td>Week 14</td><td>at Green Bay</td><td class='res'>L 21–28</td></tr><tr><td>Dec 28, 2025</td><td>Week 17</td><td>at San Francisco</td><td class='res'>L 38–42</td></tr><tr><td>Jan 4, 2026</td><td>Week 18</td><td>vs Detroit</td><td class='res'>L 16–19</td></tr><tr><td>Jan 18, 2026</td><td>Divisional</td><td>vs LA Rams</td><td class='res'>L 17–20 (OT)</td></tr></tbody></table>
 <p class="src">See also the <a href="/games/2026/" rel="noopener">2026 season</a>, <a href="/games/" rel="noopener">all games</a>, and <a href="/timeline/" rel="noopener">the full timeline</a>.</p>
 <script>
-document.querySelectorAll('.yt').forEach(function(el){
+document.querySelectorAll('.yt[data-id]').forEach(function(el){
   el.addEventListener('click',function(){
     var f=document.createElement('iframe');
     f.src='https://www.youtube-nocookie.com/embed/'+el.dataset.id+'?autoplay=1&rel=0';
